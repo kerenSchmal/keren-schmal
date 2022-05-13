@@ -4,49 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..//static/styling.css">
+    <script defer src= "..//static/function.js" ></script>
     <title>Document</title>
 </head>
 
 <body>
-    <center>
-<h1 > Contact us!</h1>
-</center>
-<img src="../static/hello.png" alt="hello" style="width: 40px; ;"> <br> <br>
-
-    <form action="" method="get">
-        <label for="First Name" style="color: rgb(13, 106, 211) ;border: 3px solid ;margin: 30px;font-size: large; padding:3px ">First Name</label> 
-        <input type="text" name="First Name" id="First Name" required style="margin-left: 40px;"> <br> <br>
-
-        <label for="Last Name" style="color: rgb(13, 106, 211) ;border: 3px solid ;margin: 30px;font-size: large; padding:3px">Last Name</label> 
-        <input type="text" name="Last Name" id="Last Name"  required style="margin-left: 40px"> <br> <br>
-
-        <label for="Email" style="color: rgb(13, 106, 211) ;border: 3px solid ;margin: 30px;font-size: large; padding:3px"> Email</label> 
-        <input type="email" name="Email" id="Email" required style="margin-left: 40px"> <br> <br>
-
-        <label for="Year of birth" style="color: rgb(13, 106, 211) ;border: 3px solid ;margin: 30px;font-size: large; padding:3px"> Year of birth</label> 
-        <input type="text" name="Year of birth" id="Year of birth"  pattern="[1][9][0-9][0-9]" style="margin-left: 40px">
-         <small style="color: rgb(12, 211, 55);">Please insert: 19**
-         </small>  <br><br>
-
-
-        <label for="ID" style="color: rgb(13, 106, 211) ;border: 3px solid ;margin: 30px;font-size: large; padding:3px">ID</label> 
-        <input type="number" name="ID" id="ID" style="margin-left: 40px"> <br> <br>
-
-        <label for="Corona" style="color: rgb(13, 106, 211) ;border: 3px solid ;margin: 30px;font-size: large; padding:3px"> had corona?</label> 
-        <select name="Corona" id="Corona">
-            <option value="yes ">yes</option>
-            <option value="no">no</option>
-        </select><br><br><br>
-
-        <input type="submit" name="Submit" value="Submit" id="Submit" style="margin-left: 200px;"> <br> <br>
-
-        <nav> 
+    <div id="container">
     
-            <h4 style="border: 2px solid rgb(160, 189, 228); padding: 8px;">Additional pages</h3>
-            <a href="C:\Users\keren\Desktop\שנה ג\סמסטר ב\web\ex1\keren-schmal\templates\home page.html">Home Page</a>
+        <header>
+            <img class="images" src="../static/hello.png" alt="hello">
+            <nav>
+                <ul class="topLinks">
+                    <li> <a href="contact.html"> Contact us </a>  </li>
+                    <li> <a href="home page.html"> Home Page </a>  </li>
+                </ul>
+            </nav>
+        </header>
 
-        </nav>
-    </form>
+        <h1 class="title"> Contact us!</h1>
+        <img class="imagesIce" id= "ice2" src="../static/iceCreamPic2" alt="hello">
+        <form action="" method="get">
+            <div class="main">
+                <label class="buttonText"> First Name</label> 
+                <small>* </small> 
+                <input class="button" type="text" name="First Name" required > <br><br>
+
+                <label class="buttonText"> Last Name</label> 
+                <small>* </small> 
+                <input class="button" type="text" name="Last Name" required> <br><br>
+
+                <label class="buttonText">  Email</label> 
+                <small>* </small> 
+                <input class="button" type="email" name="Email" required><br><br>
+         
+                <label class="buttonText">  Year of birth</label> 
+                <input class="button" type="text" name="Year of birth"   pattern="[1][9][0-9][0-9]">
+                <small>Please insert: 19**
+                </small>  <br><br>
+
+                <label class="buttonText"> ID</label> 
+                <input class="button" type="number" name="ID"> <br> <br>
+
+                <label class="buttonText"> Can we call you?</label> 
+                <select name="call" class="button">
+                    <option value="yes ">yes</option>
+                    <option value="no">no</option>
+                </select><br><br><br>
+
+                <input type="submit" name="Submit" value="Submit" class="clicks"> <br> <br>
+                <button class="clicks" onclick="typeWriter()">Call us</button>
+                <p id="ourPhoneNumber"></p>
+            </div>
+        </form> 
+        
+        <div class="navigator"
+            <nav> 
+                <h4 class="Nav">Additional pages</h3>
+                <a class= "reference" href="C:\Users\keren\Desktop\שנה ג\סמסטר ב\web\ex1\keren-schmal\templates\home page.html">Home Page</a> <br> <br>
+            </nav>
+        </div>
+      
+    </div>
 </body>
 </html>
 
