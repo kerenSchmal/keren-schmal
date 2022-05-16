@@ -19,3 +19,12 @@ function typeWriter() {
         setTimeout(typeWriter, speed);
         }
       }
+
+
+function change() {
+    const  doc = document.getElementsByClassName('imagesIce');
+    var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    doc[0].style.borderColor  = "#" + randomColor;
+    }
+setInterval(change, 1000);
+

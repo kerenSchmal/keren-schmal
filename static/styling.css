@@ -65,6 +65,7 @@
      block-size: 15vw;
      margin-left: 38%;
      grid-area: MainPic;
+     border: 0.8vw solid rgb(210, 191, 153); 
  }
 
   .navigator{
